@@ -28,6 +28,6 @@ public class TestController {
         System.out.println(saleGoods.toString());
         saleGoods.setWeight(saleGoods.getType() + 1);
         saleGoods.setGoodsName("商品名：" + saleGoods.getGoodsName());
-        return saleGoods
+        return saleGoods;
     }
 }
