@@ -30,4 +30,12 @@ public class ThymeleafController {
         map.put("th_href", "http://13blog.site");
         return "attributes";
     }
+
+    @GetMapping("/simple")
+    public String simple(ModelMap map) {
+        map.put("thymeleafText", "shiyanlou");
+        map.put("number1", 2018);
+        map.put("number2", 3);
+        return "simple";
+    }
 }
